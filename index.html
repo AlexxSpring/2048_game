@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <div class="game-container">
+
+        <div class="header">
+            <h1>2048 Game</h1>
+        </div>
+
+        <div class="score-container">
+            <div class="score-box">
+                <div class="score-label">Your Score</div>
+                <div class="score">0</div>
+            </div>
+            <div class="score-box">
+                <div class="score-label">Best Score</div>
+                <div class="score" id="best">0</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" onclick="newGame()">New Game</button>
+            <button class="btn" onclick="undoMove()">Undo</button>
+        </div>
+
+        <div class="game-board">
+            <div class="grid" id="grid"></div>
+            <div class="game-over" id="gameover">
+                <h2>Game Over!</h2>
+                <button class="btn" onclick="newGame()">Try Again</button>
+            </div>
+        </div>
+
+        <div class="mobile-controls">
+            <button class="btn" onclick="moveUp()">↑</button>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn" onclick="moveLeft()">←</button>
+                <button class="btn" onclick="moveRight()">→</button>
+                <button class="btn" onclick="moveDown()">↓</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <p><strong>How to play:</strong> Use arrow keys or swipe to move tiles. Combine same numbers to reach 2048!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
